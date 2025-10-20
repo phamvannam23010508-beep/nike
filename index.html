@@ -1,0 +1,43 @@
+<!doctype html>
+<html lang="vi">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Nike Shop - Người dùng</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body data-page="index">
+
+  <header class="site-header">
+    <div><strong>Nike Shop</strong></div>
+    <div class="header-right">
+      <span id="welcomeUser" class="muted"></span>
+      <button id="btn-logout" class="ghost">Đăng xuất</button>
+      <button id="btn-cart">Giỏ(<span id="cartCount">0</span>)</button>
+    </div>
+  </header>
+
+  <main class="container">
+    <section>
+      <h2>Sản phẩm</h2>
+      <div id="productGrid" class="product-grid"></div>
+    </section>
+
+    <section style="margin-top:18px">
+      <h3>Giỏ hàng</h3>
+      <div id="cartBox" class="card"></div>
+      <div class="row" style="margin-top:8px">
+        <button id="btnCheckout">Đặt hàng</button>
+        <button id="btnClearCart" class="ghost">Xóa giỏ</button>
+      </div>
+    </section>
+
+    <section style="margin-top:20px">
+      <h3>Đơn hàng của bạn</h3>
+      <div id="myOrders"></div>
+    </section>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>

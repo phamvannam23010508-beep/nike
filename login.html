@@ -1,0 +1,61 @@
+<!doctype html>
+<html lang="vi">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Đăng nhập - Nike Shop</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body data-page="login">
+
+  <div class="center-card auth-card">
+    <h2>Nike Shop — Đăng nhập / Đăng ký</h2>
+
+    <div class="tabs">
+      <button id="tab-login" class="tab active">Đăng nhập</button>
+      <button id="tab-register" class="tab">Đăng ký</button>
+    </div>
+
+    <!-- LOGIN -->
+    <form id="loginForm" class="form">
+      <label>Tên đăng nhập</label>
+      <input id="loginUsername" placeholder="username" />
+
+      <label>Mật khẩu</label>
+      <input id="loginPassword" type="password" placeholder="password" />
+
+      <div class="row">
+        <button type="submit">Đăng nhập</button>
+        <button id="loginToIndex" type="button" class="ghost">Trang chính</button>
+      </div>
+      <p class="muted">Admin: username <strong>phamnam</strong> / password <strong>123456789</strong></p>
+    </form>
+
+    <!-- REGISTER -->
+    <form id="registerForm" class="form" style="display:none;">
+      <label>Tên đăng nhập</label>
+      <input id="regUsername" placeholder="Tạo username" />
+
+      <label>Mật khẩu</label>
+      <input id="regPassword" type="password" placeholder="Tạo password" />
+
+      <label>Số điện thoại</label>
+      <input id="regPhone" placeholder="SĐT" />
+
+      <label>Email</label>
+      <input id="regEmail" placeholder="you@example.com" />
+
+      <label>Địa chỉ</label>
+      <input id="regAddress" placeholder="Địa chỉ giao hàng" />
+
+      <div class="row">
+        <button type="submit">Đăng ký & đăng nhập</button>
+        <button id="regToLogin" type="button" class="ghost">Quay lại</button>
+      </div>
+      <p class="muted">Sau khi đăng ký, bạn sẽ tự động được đăng nhập và chuyển tới trang chính.</p>
+    </form>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>

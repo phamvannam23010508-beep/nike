@@ -1,0 +1,41 @@
+<!doctype html>
+<html lang="vi">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Admin - Nike Shop</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body data-page="admin">
+
+  <header class="site-header">
+    <div><strong>Admin — Nike Shop</strong></div>
+    <div class="header-right">
+      <span id="adminWelcome" class="muted"></span>
+      <button id="adminLogout" class="ghost">Đăng xuất</button>
+    </div>
+  </header>
+
+  <main class="container">
+    <section>
+      <h3>Quản lý sản phẩm</h3>
+      <div class="form-inline card">
+        <input id="admName" placeholder="Tên sản phẩm" />
+        <input id="admImage" placeholder="URL ảnh" />
+        <input id="admPrice" placeholder="Giá (VND)" />
+        <input id="admStock" placeholder="Số lượng" />
+        <button id="admAdd">Thêm/Cập nhật</button>
+      </div>
+
+      <div id="admProducts" style="margin-top:12px"></div>
+    </section>
+
+    <section style="margin-top:18px">
+      <h3>Đơn hàng</h3>
+      <div id="admOrders"></div>
+    </section>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
